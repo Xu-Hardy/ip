@@ -5,7 +5,7 @@ import api from '../http_request/amazonip';
 function AmazonIP() {
     const [data, setData] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    // const [error, setError] = useState(null);
     // console.log("Component rendering");
 
     useEffect(() => {
@@ -27,7 +27,7 @@ function AmazonIP() {
     }, []);
 
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {(error as Error).message}</div>;
+    // if (error) return <div>Error: {(error as Error).message}</div>;
 
     return (
         <div>

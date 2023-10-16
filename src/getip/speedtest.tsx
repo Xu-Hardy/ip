@@ -5,7 +5,7 @@ import api from '../http_request/speedtest';
 function SpeedTestIp() {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    // const [error, setError] = useState(null);
     console.log("Component rendering");
 
     useEffect(() => {
@@ -25,7 +25,7 @@ function SpeedTestIp() {
     }, []);
 
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {(error as Error).message}</div>;
+    // if (error) return <div>Error: {(error as Error).message}</div>;
 
     return (
         <div>
