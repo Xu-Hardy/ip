@@ -29,7 +29,7 @@ function SpeedTestIp() {
 
     return (
         <div>
-            <h1>Data fetched from API:</h1>
+            <h1>Speedtest:</h1>
             <pre>{JSON.stringify(data, null, 2)}</pre>
         </div>
     );
